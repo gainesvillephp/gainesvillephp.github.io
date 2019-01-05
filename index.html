@@ -27,7 +27,13 @@
                 height: 1px;
                 margin: 2em 0;
             }
-            [name=fieldgoal_hp_field], [for=fieldgoal_hp_field] {
+            .name {
+                margin-left: -0;
+            }
+            .email {
+                margin-left: -0;
+            }
+            .description {
                 margin-left: -8172px;
             }
         </style>
@@ -39,12 +45,18 @@
             <h2>Sign up to be notified when we get started</h2>
 
             <form method="POST" action="https://fieldgoal.io/f/aesyI2">
-                <label for="fullname" style="font-size: 1.25em">Your name:</label><br>
-                <input type="text" name="fullname" placeholder="Jill Schmoe" style="border: 1px solid #aaa; padding: 0.5em; font-size: 1em; min-width: 50%;margin-bottom: 0.5em" required><br>
-                <label for="email" style="font-size: 1.25em">Your email address:</label><br>
-                <input type="email" name="email" placeholder="your@email.com" style="border: 1px solid #aaa; padding: 0.5em; font-size: 1em; min-width: 50%;margin-bottom: 0.5em" required>
-                <label for="fieldgoal_hp_field">If you are a person, don't fill this field out:</label>
-                <input type="text" name="fieldgoal_hp_field"><br>
+                <div class="name">
+                    <label for="fullname" style="font-size: 1.25em">Your name:</label><br>
+                    <input type="text" name="fullname" placeholder="Jill Schmoe" style="border: 1px solid #aaa; padding: 0.5em; font-size: 1em; min-width: 50%;margin-bottom: 0.5em" required><br>
+                </div>
+                <div class="email">
+                    <label for="email" style="font-size: 1.25em">Your email address:</label><br>
+                    <input type="email" name="email" placeholder="your@email.com" style="border: 1px solid #aaa; padding: 0.5em; font-size: 1em; min-width: 50%;margin-bottom: 0.5em" required>
+                </div>
+                <div class="description">
+                    <label for="fieldgoal_hp_field">If you are a person, don't fill this field out:</label>
+                    <input type="text" name="fieldgoal_hp_field"><br>
+                </div>
                 <button style="padding: 0.5em; font-size: 1em; width: 10em; background: #eee; border: 1px solid #aaa;">Sign up</button>
             </form>
 
