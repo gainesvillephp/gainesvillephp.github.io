@@ -7,7 +7,28 @@
         <meta name="description" content="Gainesville, Florida PHP User Group">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="style.css">
+        <style>
+            body {
+                background: #eee;
+                font-family: arial, sans-serif;
+            }
+            .container {
+                background: #fff;
+                margin: 4rem auto;
+                padding: 2rem;
+                max-width: 30em;
+            }
+            h1 {
+                margin-top: 0;
+            }
+            hr {
+                background: #ccc;
+                border: 0;
+                height: 1px;
+                margin: 2em 0;
+            }
+        </style>
+
     </head>
     <body>
         <div class="container">
@@ -16,15 +37,15 @@
             <h2>Sign up to be notified when we get started</h2>
 
             <form method="POST" action="https://fieldgoal.io/f/aesyI2">
-                <div class="name">
+                <div class="inputGroup name">
                     <label for="fullname" style="font-size: 1.25em">Your name:</label><br>
                     <input type="text" name="fullname" placeholder="Jill Schmoe" style="border: 1px solid #aaa; padding: 0.5em; font-size: 1em; min-width: 50%;margin-bottom: 0.5em" required><br>
                 </div>
-                <div class="email">
+                <div class="inputGroup email">
                     <label for="email" style="font-size: 1.25em">Your email address:</label><br>
                     <input type="email" name="email" placeholder="your@email.com" style="border: 1px solid #aaa; padding: 0.5em; font-size: 1em; min-width: 50%;margin-bottom: 0.5em" required>
                 </div>
-                <div class="description">
+                <div class="inputGroup description">
                     <label for="fieldgoal_hp_field">If you are a person, don't fill this field out:</label>
                     <input type="text" name="fieldgoal_hp_field"><br>
                 </div>
@@ -42,6 +63,7 @@
                 e.src='//www.google-analytics.com/analytics.js';
                 r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
                 ga('create','UA-36542753-2','auto');ga('send','pageview');
+                document.querySelectorAll(".inputGroup")[2].style.marginLeft = '-9999px';
             </script>
         </div>
     </body>
