@@ -28,7 +28,6 @@
                 margin: 2em 0;
             }
         </style>
-
     </head>
     <body>
         <div class="container">
@@ -45,14 +44,7 @@
                     <label for="email" style="font-size: 1.25em">Your email address:</label><br>
                     <input type="email" name="email" placeholder="your@email.com" style="border: 1px solid #aaa; padding: 0.5em; font-size: 1em; min-width: 50%;margin-bottom: 0.5em" required>
                 </div>
-                <div class="inputGroup ice_cream">
-                    <label for="ice_cream" style="font-size: 1.25em">Your favorite ice cream:</label><br>
-                    <input type="ice_cream" name="ice_cream" style="border: 1px solid #aaa; padding: 0.5em; font-size: 1em; min-width: 50%;margin-bottom: 0.5em" required>
-                </div>
-                <div class="inputGroup description">
-                    <label for="fieldgoal_hp_field">Fieldgoal favorite field:</label>
-                    <input type="text" name="fieldgoal_hp_field"><br>
-                </div>
+                <div class="g-recaptcha" data-sitekey="6LfVs5gUAAAAAL4TO6e817hEmmBuR0EaplZ9f7zY"></div>
                 <button style="padding: 0.5em; font-size: 1em; width: 10em; background: #eee; border: 1px solid #aaa;">Sign up</button>
             </form>
 
@@ -60,6 +52,7 @@
 
             <p>Who's we? Right now, it's <a href="http://twitter.com/stauffermatt">Matt Stauffer (@stauffermatt)</a></p>
 
+            <script src="https://www.google.com/recaptcha/api.js" async defer></script>
             <script>
                 (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
                 function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
